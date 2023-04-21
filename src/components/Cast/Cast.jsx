@@ -12,7 +12,6 @@ import { CastItem, CastList, CastTitle, Content, Poster, Name } from './Cast.sty
   useEffect(() => {
     api.fetchCast(movieId).then(data => setCast(data.cast));
   }, [movieId]);
-  console.log(cast);
 
   return (
     cast && (
